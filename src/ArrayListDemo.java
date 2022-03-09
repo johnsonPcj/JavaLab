@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class ArrayListDemo {
@@ -8,7 +9,7 @@ public class ArrayListDemo {
     }
 
     public static void  intArrayDemo() {
-        ArrayList<Integer> arrayList = new ArrayList<>();
+        List<Integer> arrayList = new ArrayList<>();
         System.out.printf("Before add:arrayList.size() = %d\n", arrayList.size());//array[10];array[20]
 
         arrayList.add(1);
@@ -49,8 +50,8 @@ public class ArrayListDemo {
     }
 
     public static void classArrayDemo() {
-        ArrayList<Student> arrayList = new ArrayList<>();
-        Student stu1 = new Student("zhangsan", 10);
+        List<Student> arrayList = new ArrayList<Student>();//class reference
+        Student stu1 = new Student("zhangsan", 10);//class reference
         Student stu2 = new Student("huangsan", 20);
         Student stu3 = new Student("yangsan", 30);
         Student stu4 = new Student("mandysan", 30);
@@ -90,7 +91,7 @@ class Student{
             this.age = age;
         }
 
-        public Student(String name, int age) {
+        public Student(String name, int age) {//Constructor
             this.name = name;
             this.age = age;
         }
