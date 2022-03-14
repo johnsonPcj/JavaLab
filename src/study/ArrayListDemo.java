@@ -1,3 +1,5 @@
+package study;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -99,9 +101,10 @@ class Student{
         @Override
         public boolean equals(Object o) {
             if (this == o) return true;//自己跟自己比，返回true
-            if (!(o instanceof Student student)) return false;//类型不一样，返回false
-            return getAge() == student.getAge() &&
-                    getName().equals(student.getName());//只有名字和年龄一样，才返回true
+            //if (!(o instanceof study.Student student)) return false;//类型不一样，返回false
+            //return getAge() == student.getAge() &&
+             //       getName().equals(student.getName());//只有名字和年龄一样，才返回true
+            return false;
         }
 
         @Override
