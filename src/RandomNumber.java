@@ -31,14 +31,12 @@ public class RandomNumber {
                             flag = 0;
                             break;
                         }
-
                     }
                     if(flag == 1){
                         list.add(num[i]);
 
                     }
                 }
-
             }
         }
         count = new int[list.size()];
@@ -72,17 +70,14 @@ public class RandomNumber {
                             list.get(k).value +=1;
                             break;
                         }
-
                     }
                     if(flag == 1){
                         KV keyValue= new KV();
                         keyValue.key = num[i];
-                        keyValue.value += 1;
+                        keyValue.value += 2;
                         list.add(keyValue);
-
                     }
                 }
-
             }
         }
         for (int i=0;i<list.size();i++){
