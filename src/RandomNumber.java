@@ -75,10 +75,10 @@ public class RandomNumber {
 
                     }
                     if(flag == 1){
-                        KV keyvalue= new KV();
-                        keyvalue.key = num[i];
-                        keyvalue.value += 1;
-                        list.add(keyvalue);
+                        KV keyValue= new KV();
+                        keyValue.key = num[i];
+                        keyValue.value += 1;
+                        list.add(keyValue);
 
                     }
                 }
